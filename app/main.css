@@ -1,0 +1,35 @@
+.mt100 {
+margin-top: 100px !important;
+}
+.basket {
+  background: url("img/basketStrip.png") repeat-x left top;
+  font: normal 11px/39px Arial,sans-serif;
+  height: 39px;
+  width: 150px;
+  float: right;
+  margin: 0 0 0 20px;
+}
+
+.basket > div{
+ padding: 0 0 0 48px;
+ background: url("img/basketImg.png") no-repeat 10px 5px;
+}
+.basket > div a {
+   color: #d6d6d6;
+}
+
+.navbar-form {
+ padding: 5px 0 0 0;
+}
+
+.basketArr:hover {
+  cursor: pointer;
+}
+
+.basket-empty {
+ margin-top: 50px;
+}
+
+.bold {
+  font-weight: bold;
+}

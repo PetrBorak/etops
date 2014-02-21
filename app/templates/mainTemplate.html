@@ -1,0 +1,22 @@
+<div class="mt100">
+<table class="table table-striped">
+  <thead>
+    <th>Name</th>
+    <th>Ingredients</th>
+    <th>price</th>
+    <th>image</th>
+    <th>discount</th>
+    <th>add item to basket</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="pizza in pizzas | filter: searchString">
+      <td>{{pizza.name}}</td>
+      <td><span ng-repeat="ingredience in pizza.ingredients">{{ingredience}}<span ng-show="!(pizza.ingredients.length == ($index + 1))">,&nbsp;</span></span></td>
+      <td>{{pizza.price}}&nbsp;CZK</td>
+      <td><img src="{{pizza.image}}" /></td>
+      <td>{{pizza.discount}}&nbsp;CZK</td>
+      <td><button add-to-basket type="button" class="btn btn-primary">Add to basket</button>
+    </tr>
+  </tbody>
+</table>
+</div>
